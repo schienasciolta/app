@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f4eee6">
+<title>Schiena Sciolta</title>
+<link rel="icon" type="image/png" sizes="32x32" href="./img/icones/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/icones/apple-touch-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Schiena Sciolta">
+<style>
+:root{
+  --fundo:#f4eee6; --cartao:#fffdf9; --tinta:#1f312d; --suave:#5d6d68; --linha:#e4dacd;
+  --verde:#2f6f62; --verde-2:#e2eee8; --verde-3:#cfe3da; --areia:#efe5d8; --ambra:#b8692a; --ambra-2:#f6e6d4;
+  --alerta:#a5402c; --alerta-2:#f7e1da;
+  --f1:#7fa89c; --f2:#c08a4e; --f3:#2f6f62;
+}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+html,body{background:var(--fundo);color:var(--tinta)}
+body{font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100dvh;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+.tela{max-width:480px;margin:0 auto;padding:18px 18px 40px}
+h1{font-size:27px;line-height:1.2;letter-spacing:-.01em}
+h2{font-size:21px;line-height:1.25}
+p{margin-top:8px}
+.suave{color:var(--suave)}
+.pq{font-size:14.5px}
+.topo{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.marca{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px}
+.marca img{width:34px;height:34px;border-radius:9px}
+.icone{width:42px;height:42px;border-radius:12px;display:grid;place-items:center}
+.icone svg{width:22px;height:22px}
+.cartao{background:var(--cartao);border:1px solid var(--linha);border-radius:20px;padding:18px;margin-top:14px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:56px;border-radius:16px;font-weight:700;font-size:18px;text-decoration:none;margin-top:14px}
+.btn.prim{background:var(--verde);color:#fff}
+.btn.sec{background:var(--verde-2);color:var(--verde)}
+.btn.linha{border:1.5px solid var(--linha);background:var(--cartao)}
+.btn.alerta{background:var(--alerta-2);color:var(--alerta)}
+.btn svg{width:20px;height:20px}
+.etiqueta{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--verde-2);color:var(--verde)}
+.dia-n{font-size:15px;font-weight:600;color:var(--suave)}
+.trilha{display:grid;grid-template-columns:repeat(21,1fr);gap:4px;margin:14px 0 6px}
+.trilha i{height:10px;border-radius:5px;background:var(--areia)}
+.trilha i.f1.feito{background:var(--f1)} .trilha i.f2.feito{background:var(--f2)} .trilha i.f3.feito{background:var(--f3)}
+.trilha i.hoje{outline:2px solid var(--tinta);outline-offset:1px}
+.fases{display:flex;justify-content:space-between;font-size:12.5px;color:var(--suave)}
+.lista-ex{list-style:none;padding:0;margin-top:10px}
+.lista-ex li{display:flex;align-items:center;gap:12px;padding:9px 0;border-top:1px solid var(--linha)}
+.lista-ex li:first-child{border-top:0}
+.lista-ex svg.mini{width:56px;height:42px;flex:none;background:var(--areia);border-radius:10px}
+.lista-ex b{display:block;font-size:16px;line-height:1.25}
+.lista-ex small{color:var(--suave);font-size:13.5px}
+.extra{display:flex;align-items:center;gap:14px;width:100%;text-align:left;padding:14px 0;border-top:1px solid var(--linha)}
+.extra:first-of-type{border-top:0}
+.extra b{display:block;font-size:16.5px}
+.extra small{color:var(--suave);font-size:13.5px}
+.extra .fim{margin-left:auto;color:var(--suave)}
+.extra .fim svg{width:20px;height:20px}
+.cadeado{font-size:13px;font-weight:700;color:var(--ambra);background:var(--ambra-2);border-radius:999px;padding:4px 10px;white-space:nowrap}
+svg.figura{width:100%;height:auto;display:block;background:var(--areia);border-radius:18px}
+.chao{stroke:#d8cab7;stroke-width:2}
+.adereco path{stroke:#b9a48a;stroke-width:4;fill:none;stroke-linecap:round}
+.perto path{stroke:var(--verde);stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.perto circle{fill:var(--verde)}
+.longe path{stroke:#9fbfb4;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.mini .perto path,.mini .longe path{stroke-width:9}
+.passo-n{font-size:14px;font-weight:600;color:var(--suave)}
+.barra{height:6px;border-radius:3px;background:var(--areia);overflow:hidden;margin:8px 0 14px}
+.barra i{display:block;height:100%;background:var(--verde);border-radius:3px;transition:width .3s}
+.passos{padding-left:22px;margin-top:10px}
+.passos li{margin-top:6px}
+.cuidado{display:flex;gap:10px;align-items:flex-start;margin-top:12px;padding:12px 14px;border-radius:14px;background:var(--ambra-2);font-size:15px}
+.cuidado svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--ambra)}
+.tempo{display:flex;align-items:center;gap:16px;margin-top:16px}
+.relogio{font-variant-numeric:tabular-nums;font-size:42px;font-weight:700;letter-spacing:-.02em;min-width:110px}
+.relogio.zero{color:var(--verde)}
+.ctrl{display:flex;gap:10px;flex:1}
+.ctrl .btn{margin-top:0}
+.nav-sess{display:flex;gap:10px}
+.nav-sess .btn{flex:1}
+.opcao{display:block;width:100%;text-align:left;border:1.5px solid var(--linha);background:var(--cartao);border-radius:16px;padding:14px 16px;margin-top:10px}
+.opcao b{display:block;font-size:17px}
+.opcao small{color:var(--suave);font-size:14px}
+.opcao:active{border-color:var(--verde)}
+.alerta-lista{padding-left:20px;margin-top:10px}
+.alerta-lista li{margin-top:7px}
+.aviso{margin-top:12px;padding:12px 14px;border-radius:14px;background:var(--alerta-2);color:var(--alerta);font-size:15px}
+.rodape{margin-top:26px;font-size:13px;color:var(--suave);text-align:center}
+.inst{display:flex;align-items:center;gap:12px;margin-top:14px;padding:12px 14px;border-radius:16px;background:var(--verde-2)}
+.inst b{display:block;font-size:15.5px} .inst small{font-size:13.5px;color:var(--suave)}
+.inst .btn{width:auto;min-height:42px;padding:0 16px;margin:0 0 0 auto;font-size:15px}
+.modal{position:fixed;inset:0;background:rgba(31,49,45,.45);display:flex;align-items:flex-end;justify-content:center;z-index:9}
+.modal .folha{background:var(--fundo);width:100%;max-width:480px;border-radius:24px 24px 0 0;padding:22px 18px calc(22px + env(safe-area-inset-bottom))}
+.modal ul{padding-left:20px;margin-top:10px}
+.preco{font-size:15px;color:var(--suave);margin-top:8px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--tinta);color:#fff;padding:10px 16px;border-radius:12px;font-size:15px;z-index:10}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main id="app" class="tela"></main>
+<script src="./conteudo.js"></script>
+<script src="./figura.js"></script>
+<script>
+/* ===== Acesso: vem da PASTA do link de cada compra e se soma ao que o aparelho já guardou. ===== */
+const RAIZ = './';
+const ACESSO_PASTA = [];
+const CHECKOUT = { sveglia: '#', collo: '#', forte: '#' };
+const PRECO = { sveglia: '9,90 €', collo: '4,90 €', forte: '19,90 €' };
+const LS = {
+  ler: (k, d) => { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? d; } catch (e) { return d; } },
+  gravar: (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+let ACESSO = [...new Set([...LS.ler('ss_acesso', []), ...ACESSO_PASTA])];
+LS.gravar('ss_acesso', ACESSO);
+const tem = x => ACESSO.includes(x);
+
+const EX = CONTEUDO.esercizi, P = CONTEUDO.piano;
+const iso = d => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+const hoje = () => iso(new Date());
+const depoisDe = s => { const d = new Date(s + 'T12:00:00'); d.setDate(d.getDate() + 1); return iso(d); };
+/* fatto: data da última sessão do plano; pendente: falta a pergunta da noite; libera: data em que o próximo dia abre */
+const E = Object.assign({ visto: false, medico: false, giorno: 1, fatto: null, pendente: false, libera: null, ultimo: null, completo: false, forte: 1, forteFatto: null }, LS.ler('ss_stato', {}));
+const salvar = () => LS.gravar('ss_stato', E);
+let T = { tela: 'home' };
+
+const fase = g => P.fasi.find(f => g >= f.giorni[0] && g <= f.giorni[1]);
+const faseN = g => P.fasi.indexOf(fase(g)) + 1;
+const min = lista => Math.round(lista.reduce((s, x) => s + x[1], 0) / 60);
+const mmss = s => Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+
+/* Schiena Forte: tre giornate che si alternano, un po' più lunghe ogni due settimane. */
+function forteGiorno(i) {
+  const F = P.pacchetti.forte, sett = Math.ceil(i / F.giorni_settimana), lettera = 'ABC'[(i - 1) % 3];
+  const k = 1 + .1 * Math.floor((sett - 1) / 2);
+  return { sett, lettera, esercizi: F.giornate[lettera].map(([id, s]) => [id, id === 'camminata' ? s : Math.round(s * k / 5) * 5]) };
+}
+
+/* ===== ícones ===== */
+const I = {
+  play: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>',
+  pausa: '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1.5"/><rect x="14" y="5" width="4" height="14" rx="1.5"/></svg>',
+  dir: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>',
+  esq: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>',
+  x: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+  sole: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+  collo: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="3"/><path d="M12 9v4M5 21c0-4 3-8 7-8s7 4 7 8"/></svg>',
+  forte: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15l4-4 4 4 8-8"/><path d="M14 7h6v6"/></svg>',
+  stop: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/></svg>',
+  ajuste: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>',
+  ok: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+};
+
+/* ===== telas ===== */
+const app = document.getElementById('app');
+let paraFiguras = [];
+function limparFiguras() { paraFiguras.forEach(f => f()); paraFiguras = []; }
+function miniaturas() {
+  app.querySelectorAll('svg.mini[data-ex]').forEach(s => Figura.montar(s, EX[s.dataset.ex])(1));
+}
+function marca() {
+  return `<div class="marca"><img src="${RAIZ}img/icones/icone-192.png" alt="">Schiena Sciolta</div>`;
+}
+function itens(lista) {
+  return `<ul class="lista-ex">${lista.map(([id, s]) => `<li><svg class="mini" data-ex="${id}"></svg><div><b>${EX[id].nome}</b><small>${mmss(s)} · ${EX[id].dove}</small></div></li>`).join('')}</ul>`;
+}
+
+function telaTrancado() {
+  return `${marca()}<div class="cartao"><h2>Apri dal link dell'email</h2>
+  <p>Il tuo accesso si apre dal link che hai ricevuto per email dopo l'acquisto. È quel link che sblocca il piano su questo telefono.</p>
+  <p class="suave pq">Non trovi l'email? Controlla anche nella cartella spam o promozioni.</p></div>`;
+}
+
+function telaBenvenuto() {
+  return `${marca()}<h1 style="margin-top:6px">Prima di iniziare</h1>
+  <p>Il piano dura 3 settimane, 10-12 minuti al giorno. Si parte da movimenti dolci e si va avanti solo quando la schiena regge.</p>
+  <div class="cartao"><h2>C'è uno di questi segnali?</h2>
+  <ul class="alerta-lista">${P.allarme.map(a => `<li>${a}</li>`).join('')}</ul></div>
+  <button class="btn prim" data-a="nessuno">No, nessuno di questi</button>
+  <button class="btn alerta" data-a="almeno">Sì, almeno uno</button>
+  <p class="rodape">Schiena Sciolta non è una cura e non sostituisce il medico o il fisioterapista.</p>`;
+}
+
+function telaMedico() {
+  return `${marca()}<h1 style="margin-top:6px">Prima senti il medico</h1>
+  <p>Con questi segnali il primo passo è una visita, non gli esercizi a casa. Mostra il piano al tuo medico e chiedigli se puoi farlo.</p>
+  <button class="btn prim" data-a="medico-ok">Il medico mi ha detto che posso muovermi</button>
+  <button class="btn linha" data-a="indietro">Torna indietro</button>`;
+}
+
+function blocoHoje() {
+  const g = E.giorno, lista = P.giorni[g - 1], f = fase(g);
+  if (E.completo) {
+    return `<div class="cartao"><span class="etiqueta">Fatto</span><h2 style="margin-top:10px">Hai finito le 3 settimane</h2>
+    <p>Per non perdere quello che hai costruito, continua a muoverti ogni giorno. Puoi rifare la terza settimana o passare al mantenimento.</p>
+    <button class="btn prim" data-a="rifai-3">Rifai la terza settimana</button>
+    <button class="btn sec" data-a="pacchetto" data-p="forte">${tem('forte') ? 'Apri Schiena Forte' : 'Scopri Schiena Forte'}</button></div>`;
+  }
+  if (E.pendente) {
+    return `<div class="cartao"><span class="etiqueta">Giorno ${g} fatto</span><h2 style="margin-top:10px">Com'è andata oggi?</h2>
+    <p class="suave pq">Rispondi la sera, quando sai com'è stata la giornata. Dalla risposta dipende il giorno dopo.</p>
+    <button class="opcao" data-a="checkin" data-r="bene"><b>Bene, o come prima</b><small>Domani si va avanti</small></button>
+    <button class="opcao" data-a="checkin" data-r="peggio"><b>Un po' peggio</b><small>Domani si ripete lo stesso giorno</small></button>
+    <button class="opcao" data-a="checkin" data-r="gamba"><b>Peggio, il dolore scende di più nella gamba</b><small>Si torna indietro di qualche giorno</small></button></div>`;
+  }
+  if (E.libera && hoje() < E.libera) {
+    return `<div class="cartao"><span class="etiqueta">A domani</span><h2 style="margin-top:10px">Per oggi hai finito</h2>
+    <p>Domani si apre il giorno ${g}: ${f.nome.toLowerCase()}.</p>
+    <button class="btn linha" data-a="sessione" data-s="oggi">Rifai gli esercizi di oggi</button></div>`;
+  }
+  return `<div class="cartao"><span class="etiqueta">${f.nome}</span>
+  <h2 style="margin-top:10px">Gli esercizi di oggi</h2><p class="suave pq">${lista.length} esercizi · circa ${min(lista)} minuti · ${f.testo}</p>
+  ${itens(lista)}
+  <button class="btn prim" data-a="sessione" data-s="oggi">${I.play}Inizia</button></div>`;
+}
+
+function telaHome() {
+  const g = E.giorno, completo = E.completo;
+  const feitos = completo ? 21 : g - 1;
+  const trilha = Array.from({ length: 21 }, (_, i) => `<i class="f${faseN(i + 1)}${i < feitos || (i === g - 1 && E.pendente) ? ' feito' : ''}${!completo && i === g - 1 ? ' hoje' : ''}"></i>`).join('');
+  const extra = (id, ic) => {
+    const k = P.pacchetti[id];
+    return `<button class="extra" data-a="pacchetto" data-p="${id}"><span class="icone" style="background:var(--verde-2);color:var(--verde)">${ic}</span>
+    <span><b>${k.nome}</b><small>${k.sotto}</small></span><span class="fim">${tem(id) ? I.dir : `<span class="cadeado">${PRECO[id]}</span>`}</span></button>`;
+  };
+  return `<div class="topo">${marca()}<button class="icone" data-a="ajustes" aria-label="Impostazioni">${I.ajuste}</button></div>
+  <div class="dia-n">${completo ? 'Piano completato' : `Giorno ${g} di 21`}</div>
+  <div class="trilha">${trilha}</div>
+  <div class="fases">${P.fasi.map(f => `<span>${f.nome}</span>`).join('')}</div>
+  ${blocoHoje()}
+  ${instalarBloco()}
+  <div class="cartao"><h2>Extra</h2>
+  ${extra('sveglia', I.sole)}${extra('collo', I.collo)}${extra('forte', I.forte)}
+  <button class="extra" data-a="allarme"><span class="icone" style="background:var(--alerta-2);color:var(--alerta)">${I.stop}</span>
+  <span><b>Quando fermarsi</b><small>I segnali per cui sentire prima il medico</small></span><span class="fim">${I.dir}</span></button></div>
+  <p class="rodape">Schiena Sciolta non è una cura e non sostituisce il medico o il fisioterapista.</p>`;
+}
+
+function telaAllarme() {
+  return `<div class="topo"><button class="icone" data-a="home" aria-label="Indietro">${I.esq}</button></div>
+  <h1>Quando fermarsi</h1>
+  <p>Se compare uno di questi segnali, fermati e senti il medico prima di continuare.</p>
+  <div class="cartao"><ul class="alerta-lista">${P.allarme.map(a => `<li>${a}</li>`).join('')}</ul></div>
+  <div class="cartao"><h2>Durante gli esercizi</h2>
+  <ul class="alerta-lista"><li>Un leggero tirare va bene. Il dolore che aumenta no.</li><li>Se un esercizio fa scendere di più il dolore nella gamba, saltalo.</li><li>Se il formicolio aumenta invece di diminuire, fermati.</li></ul></div>
+  <button class="btn prim" data-a="home">Ho capito</button>`;
+}
+
+function telaPacchetto(id) {
+  const k = P.pacchetti[id];
+  if (id === 'forte') {
+    const tot = k.settimane * k.giorni_settimana, i = Math.min(E.forte, tot), d = forteGiorno(i);
+    const fattoOggi = E.forteFatto === hoje();
+    return `<div class="topo"><button class="icone" data-a="home" aria-label="Indietro">${I.esq}</button></div>
+    <span class="etiqueta">Settimana ${d.sett} di ${k.settimane}</span>
+    <h1 style="margin-top:10px">${k.nome}</h1><p>${k.testo}</p>
+    <div class="cartao"><h2>${fattoOggi ? 'Fatto per oggi' : `Giorno ${i} di ${tot}`}</h2><p class="suave pq">${d.esercizi.length} esercizi · circa ${min(d.esercizi)} minuti</p>
+    ${itens(d.esercizi)}
+    <button class="btn ${fattoOggi ? 'linha' : 'prim'}" data-a="sessione" data-s="forte">${fattoOggi ? 'Rifallo' : I.play + 'Inizia'}</button></div>`;
+  }
+  return `<div class="topo"><button class="icone" data-a="home" aria-label="Indietro">${I.esq}</button></div>
+  <h1>${k.nome}</h1><p>${k.testo}</p>
+  <div class="cartao"><p class="suave pq">${k.esercizi.length} esercizi · circa ${min(k.esercizi)} minuti</p>${itens(k.esercizi)}
+  <button class="btn prim" data-a="sessione" data-s="${id}">${I.play}Inizia</button></div>`;
+}
+
+/* ===== sessão ===== */
+let S = null, relogioId = null, wake = null;
+function listaSessao(s) {
+  if (s === 'oggi') return P.giorni[E.giorno - 1];
+  if (s === 'forte') return forteGiorno(E.forte).esercizi;
+  return P.pacchetti[s].esercizi;
+}
+function abrirSessao(s) {
+  S = { s, lista: listaSessao(s), i: 0, resta: 0, corre: false, fim: 0 };
+  S.resta = S.lista[0][1];
+  T = { tela: 'sessione' };
+  try { navigator.wakeLock && navigator.wakeLock.request('screen').then(w => wake = w).catch(() => {}); } catch (e) {}
+  render();
+}
+function pararRelogio() { clearInterval(relogioId); relogioId = null; if (S) S.corre = false; }
+function tique() {
+  const r = Math.max(0, Math.round((S.fim - Date.now()) / 1000));
+  if (r !== S.resta) { S.resta = r; const el = document.getElementById('relogio'); if (el) { el.textContent = mmss(r); el.classList.toggle('zero', r === 0); } }
+  if (r === 0) { pararRelogio(); try { navigator.vibrate && navigator.vibrate([200, 100, 200]); } catch (e) {} render(); }
+}
+function telaSessao() {
+  const [id, seg] = S.lista[S.i], ex = EX[id], ultimo = S.i === S.lista.length - 1;
+  const acabou = S.resta === 0;
+  return `<div class="topo"><button class="icone" data-a="sair" aria-label="Chiudi">${I.x}</button><span class="passo-n">Esercizio ${S.i + 1} di ${S.lista.length}</span><span style="width:42px"></span></div>
+  <div class="barra"><i style="width:${(S.i / S.lista.length) * 100}%"></i></div>
+  <svg class="figura" id="fig" role="img" aria-label="${ex.nome}"></svg>
+  <h2 style="margin-top:14px">${ex.nome}</h2><p class="suave pq" style="margin-top:2px">${ex.dove}</p>
+  <ol class="passos">${ex.passi.map(p => `<li>${p}</li>`).join('')}</ol>
+  <div class="cuidado">${I.stop}<span>${ex.attenzione}</span></div>
+  <div class="tempo"><div class="relogio${acabou ? ' zero' : ''}" id="relogio">${mmss(S.resta)}</div>
+  <div class="ctrl">${acabou ? `<span class="suave pq">Fatto. ${ultimo ? 'Era l\'ultimo.' : 'Passa al prossimo.'}</span>` : `<button class="btn ${S.corre ? 'sec' : 'prim'}" data-a="${S.corre ? 'pausa' : 'avvia'}">${S.corre ? I.pausa + 'Pausa' : I.play + (S.resta < seg ? 'Riprendi' : 'Avvia')}</button>`}</div></div>
+  <div class="nav-sess">${S.i > 0 ? `<button class="btn linha" data-a="prev">${I.esq}</button>` : ''}
+  <button class="btn ${acabou ? 'prim' : 'linha'}" data-a="next">${ultimo ? 'Finito' : 'Prossimo'}${I.dir}</button></div>`;
+}
+function fimSessao() {
+  pararRelogio();
+  try { wake && wake.release(); } catch (e) {} wake = null;
+  const s = S.s; S = null;
+  if (s === 'oggi' && !E.completo) { E.fatto = hoje(); E.pendente = true; salvar(); T = { tela: 'home' }; toast('Fatto per oggi'); }
+  else if (s === 'forte') { if (E.forteFatto !== hoje()) { E.forteFatto = hoje(); E.forte = Math.min(E.forte + 1, 40); salvar(); } T = { tela: 'pacchetto', p: 'forte' }; toast('Fatto per oggi'); }
+  else { T = s === 'oggi' ? { tela: 'home' } : { tela: 'pacchetto', p: s }; toast('Fatto'); }
+  render();
+}
+
+/* Pergunta da noite: decide se o próximo dia avança, repete ou volta. */
+function checkin(r) {
+  E.pendente = false; E.libera = depoisDe(E.fatto || hoje()); E.ultimo = r;
+  if (r === 'bene') { if (E.giorno >= 21) E.completo = true; else E.giorno += 1; }
+  else if (r === 'gamba') { E.giorno = Math.max(1, E.giorno - 3); }
+  salvar();
+  if (r === 'gamba') { T = { tela: 'gamba' }; render(); return; }
+  render(); toast(r === 'bene' ? 'Domani si va avanti' : 'Domani si ripete');
+}
+function telaGamba() {
+  return `${marca()}<h1 style="margin-top:6px">Si torna indietro di qualche giorno</h1>
+  <p>Domani riparti dal giorno ${E.giorno}, con esercizi più dolci. Salta quelli che fanno scendere il dolore nella gamba.</p>
+  <div class="aviso">Se il dolore nella gamba continua ad aumentare, o compare uno dei segnali qui sotto, fermati e senti il medico.</div>
+  <div class="cartao"><ul class="alerta-lista">${P.allarme.map(a => `<li>${a}</li>`).join('')}</ul></div>
+  <button class="btn prim" data-a="home">Ho capito</button>`;
+}
+
+function telaAjustes() {
+  return `<div class="topo"><button class="icone" data-a="home" aria-label="Indietro">${I.esq}</button></div>
+  <h1>Impostazioni</h1>
+  <div class="cartao"><h2>Ricomincia da capo</h2><p class="suave pq">Torni al giorno 1. Gli extra che hai sbloccato restano.</p>
+  <button class="btn alerta" data-a="reset">${T.conferma ? 'Tocca di nuovo per confermare' : 'Ricomincia dal giorno 1'}</button></div>
+  <div class="cartao"><h2>Già acquistato un extra?</h2><p class="suave pq">Apri il link dell'email di quell'acquisto: si aggiunge a quello che hai già sbloccato.</p></div>`;
+}
+
+/* ===== pacotes trancados ===== */
+function modalPacote(id) {
+  const k = P.pacchetti[id], m = document.createElement('div');
+  m.className = 'modal';
+  m.innerHTML = `<div class="folha"><span class="cadeado">${PRECO[id]} · pagamento unico</span><h2 style="margin-top:12px">${k.nome}</h2><p>${k.testo}</p>
+  <a class="btn prim" href="${CHECKOUT[id]}">Sblocca per ${PRECO[id]}</a><button class="btn linha" data-fechar>Non ora</button>
+  <p class="suave pq" style="margin-top:12px">Già acquistato? Apri il link dell'email di quell'acquisto.</p></div>`;
+  m.addEventListener('click', e => { if (e.target === m || e.target.closest('[data-fechar]')) m.remove(); });
+  document.body.appendChild(m);
+}
+
+/* ===== instalar ===== */
+const instalado = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+function instalarBloco() {
+  if (instalado() || LS.ler('ss_inst_no', false)) return '';
+  if (window.__prompt) return `<div class="inst"><span><b>Mettila sulla schermata Home</b><small>Si apre come un'app, anche senza internet</small></span><button class="btn prim" data-a="instalar">Installa</button></div>`;
+  if (ios) return `<div class="inst"><span><b>Mettila sulla schermata Home</b><small>Tocca Condividi e poi Aggiungi alla schermata Home</small></span></div>`;
+  return '';
+}
+window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); window.__prompt = e; if (T.tela === 'home') render(); });
+
+function toast(t) {
+  const d = document.createElement('div'); d.className = 'toast'; d.textContent = t; document.body.appendChild(d); setTimeout(() => d.remove(), 2200);
+}
+
+/* ===== render e ações ===== */
+function render() {
+  limparFiguras();
+  if (!tem('base')) T = { tela: 'trancado' };
+  else if (!E.visto && !['benvenuto', 'medico'].includes(T.tela)) T = { tela: 'benvenuto' };
+  const tela = { trancado: telaTrancado, benvenuto: telaBenvenuto, medico: telaMedico, home: telaHome, allarme: telaAllarme,
+    pacchetto: () => telaPacchetto(T.p), sessione: telaSessao, gamba: telaGamba, ajustes: telaAjustes }[T.tela] || telaHome;
+  app.innerHTML = tela();
+  miniaturas();
+  const fig = document.getElementById('fig');
+  if (fig && S) paraFiguras.push(Figura.animar(fig, EX[S.lista[S.i][0]]));
+}
+app.addEventListener('click', e => {
+  const b = e.target.closest('[data-a]'); if (!b) return;
+  const a = b.dataset.a;
+  if (a === 'nessuno') { E.visto = true; salvar(); T = { tela: 'home' }; }
+  else if (a === 'almeno') T = { tela: 'medico' };
+  else if (a === 'medico-ok') { E.visto = true; E.medico = true; salvar(); T = { tela: 'home' }; }
+  else if (a === 'indietro') T = { tela: 'benvenuto' };
+  else if (a === 'home') T = { tela: 'home' };
+  else if (a === 'allarme') T = { tela: 'allarme' };
+  else if (a === 'ajustes') T = { tela: 'ajustes' };
+  else if (a === 'reset') { if (!T.conferma) { T = { tela: 'ajustes', conferma: true }; } else { Object.assign(E, { giorno: 1, fatto: null, pendente: false, libera: null, ultimo: null, completo: false }); salvar(); T = { tela: 'home' }; toast('Si riparte dal giorno 1'); } }
+  else if (a === 'pacchetto') { const p = b.dataset.p; if (tem(p)) T = { tela: 'pacchetto', p }; else { modalPacote(p); return; } }
+  else if (a === 'sessione') { abrirSessao(b.dataset.s); return; }
+  else if (a === 'avvia') { S.corre = true; S.fim = Date.now() + S.resta * 1000; relogioId = setInterval(tique, 250); }
+  else if (a === 'pausa') pararRelogio();
+  else if (a === 'next') { pararRelogio(); if (S.i === S.lista.length - 1) { fimSessao(); return; } S.i++; S.resta = S.lista[S.i][1]; window.scrollTo(0, 0); }
+  else if (a === 'prev') { pararRelogio(); S.i--; S.resta = S.lista[S.i][1]; window.scrollTo(0, 0); }
+  else if (a === 'sair') { pararRelogio(); try { wake && wake.release(); } catch (er) {} S = null; T = { tela: 'home' }; }
+  else if (a === 'checkin') { checkin(b.dataset.r); return; }
+  else if (a === 'rifai-3') { Object.assign(E, { giorno: 15, completo: false, fatto: null, pendente: false, libera: null }); salvar(); T = { tela: 'home' }; }
+  else if (a === 'instalar') { const p = window.__prompt; if (p) { p.prompt(); p.userChoice.finally(() => { window.__prompt = null; render(); }); } return; }
+  render();
+});
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && S && S.corre) tique(); });
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register(RAIZ + 'sw.js', { scope: RAIZ }).then(() => navigator.serviceWorker.ready).then(reg => {
+    const sw = reg.active || navigator.serviceWorker.controller; if (!sw) return;
+    navigator.serviceWorker.addEventListener('message', ev => {
+      const d = ev.data || {}; if (d.tipo !== 'acesso' || !Array.isArray(d.itens)) return;
+      const antes = ACESSO.length; ACESSO = [...new Set([...ACESSO, ...d.itens])]; LS.gravar('ss_acesso', ACESSO);
+      if (ACESSO.length !== antes) { if (T.tela === 'trancado') T = { tela: 'home' }; render(); }
+    });
+    sw.postMessage({ tipo: 'gravar-acesso', itens: ACESSO });
+  }).catch(() => {});
+}
+render();
+</script>
+</body>
+</html>

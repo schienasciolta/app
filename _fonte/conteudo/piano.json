@@ -1,0 +1,67 @@
+{
+  "_nota": "O plano: cada dia é uma lista [exercício, segundos]. Entre 10 e 12 minutos por dia, a caminhada incluída. As fases sobem de calmo para firme; o check-in da noite decide se avança, repete ou volta.",
+  "fasi": [
+    {"id": "calmare", "nome": "Calmare", "giorni": [1, 7], "testo": "Movimenti dolci, quasi tutti da sdraiato, per far calare la tensione."},
+    {"id": "sciogliere", "nome": "Sciogliere", "giorni": [8, 14], "testo": "Si recupera il movimento della schiena e delle anche, senza forzare."},
+    {"id": "rinforzare", "nome": "Rinforzare", "giorni": [15, 21], "testo": "Gli esercizi che aiutano la schiena a reggere la giornata."}
+  ],
+  "giorni": [
+    [["respiro", 60], ["bacino", 90], ["ginocchio_petto", 120], ["bambino", 60], ["camminata", 300]],
+    [["respiro", 60], ["bacino", 90], ["ginocchio_petto", 120], ["due_ginocchia", 60], ["bambino", 60], ["camminata", 300]],
+    [["respiro", 60], ["bacino", 90], ["ginocchio_petto", 120], ["gatto", 90], ["bambino", 60], ["camminata", 300]],
+    [["respiro", 45], ["bacino", 90], ["due_ginocchia", 90], ["gatto", 90], ["bambino", 90], ["camminata", 300]],
+    [["respiro", 45], ["bacino", 90], ["ginocchio_petto", 120], ["gatto", 90], ["bambino", 75], ["camminata", 300]],
+    [["respiro", 45], ["bacino", 90], ["due_ginocchia", 90], ["gatto", 120], ["bambino", 75], ["camminata", 300]],
+    [["respiro", 45], ["bacino", 90], ["ginocchio_petto", 120], ["gatto", 120], ["bambino", 75], ["camminata", 300]],
+    [["bacino", 60], ["gatto", 90], ["piriforme", 120], ["nervo", 60], ["bambino", 60], ["camminata", 300]],
+    [["gatto", 90], ["piriforme", 120], ["nervo", 60], ["estensione", 60], ["bambino", 60], ["camminata", 300]],
+    [["gatto", 90], ["flessori", 120], ["piriforme", 120], ["nervo", 60], ["camminata", 300]],
+    [["gatto", 90], ["estensione", 90], ["flessori", 120], ["piriforme", 90], ["camminata", 300]],
+    [["gatto", 90], ["nervo", 90], ["flessori", 120], ["piriforme", 120], ["camminata", 300]],
+    [["gatto", 90], ["estensione", 90], ["flessori", 120], ["piriforme", 90], ["camminata", 300]],
+    [["gatto", 90], ["estensione", 90], ["flessori", 120], ["piriforme", 120], ["camminata", 300]],
+    [["gatto", 60], ["ponte", 90], ["uccello", 120], ["sedia", 60], ["camminata", 300]],
+    [["gatto", 60], ["ponte", 90], ["insetto", 90], ["uccello", 120], ["camminata", 300]],
+    [["gatto", 60], ["ponte", 120], ["uccello", 120], ["plank", 45], ["sedia", 60], ["camminata", 300]],
+    [["gatto", 60], ["ponte", 120], ["insetto", 120], ["plank", 45], ["sedia", 60], ["camminata", 300]],
+    [["gatto", 60], ["ponte", 120], ["uccello", 120], ["plank", 60], ["sedia", 90], ["camminata", 240]],
+    [["gatto", 60], ["ponte", 120], ["insetto", 120], ["uccello", 120], ["plank", 60], ["camminata", 240]],
+    [["gatto", 60], ["ponte", 120], ["uccello", 120], ["plank", 60], ["sedia", 90], ["camminata", 240]]
+  ],
+  "pacchetti": {
+    "sveglia": {
+      "nome": "Sveglia senza rigidità",
+      "sotto": "6 minuti a letto, prima di alzarti",
+      "testo": "Per le mattine in cui la schiena è bloccata: si fa a letto, appena svegli, prima di mettere i piedi a terra.",
+      "esercizi": [["respiro", 60], ["bacino", 60], ["ginocchio_petto", 90], ["due_ginocchia", 60], ["ponte", 60]],
+      "fine": "Per alzarti: girati sul fianco, scendi con le gambe dal letto e spingiti su con le braccia."
+    },
+    "collo": {
+      "nome": "Collo e spalle",
+      "sotto": "8 minuti, seduto",
+      "testo": "Per quando la tensione sale al collo, con le stesse regole del piano: si parte piano e si va avanti solo se regge.",
+      "esercizi": [["mento", 90], ["spalle", 60], ["petto", 90], ["braccia", 90], ["gatto", 90], ["mento", 60]],
+      "fine": "Ripetilo quando passi tanto tempo al computer o al telefono."
+    },
+    "forte": {
+      "nome": "Schiena Forte",
+      "sotto": "8 settimane dopo le 3 settimane",
+      "testo": "Il mantenimento: 5 giorni a settimana, tre giornate che si alternano e diventano un po' più lunghe ogni due settimane.",
+      "giornate": {
+        "A": [["ponte_una", 120], ["uccello", 120], ["plank", 60], ["sedia", 120], ["camminata", 300]],
+        "B": [["ponte", 120], ["insetto", 120], ["flessori", 120], ["piriforme", 90], ["camminata", 300]],
+        "C": [["gatto", 60], ["uccello", 120], ["plank", 75], ["sedia", 120], ["estensione", 60], ["camminata", 300]]
+      },
+      "settimane": 8,
+      "giorni_settimana": 5
+    }
+  },
+  "allarme": [
+    "Il dolore è arrivato dopo una caduta, un incidente o un colpo forte.",
+    "Hai la febbre insieme al mal di schiena, o perdi peso senza motivo.",
+    "Perdi forza in una gamba o inciampi con il piede.",
+    "Hai formicolio o perdi sensibilità tra le gambe, intorno all'inguine.",
+    "Hai problemi nuovi a controllare la vescica o l'intestino.",
+    "Il dolore è fortissimo anche da fermo, di notte, e non cambia con nessuna posizione."
+  ]
+}

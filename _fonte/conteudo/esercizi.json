@@ -1,0 +1,1276 @@
+{
+ "_nota": "Biblioteca de exercícios (it-IT). Poses: h = quadril [x,y]; t = ângulo do tronco; c = curva das costas (+ arqueia para cima); k = inclinação da cabeça; a1/a2 = braço [ombro-cotovelo, cotovelo-mão]; l1/l2 = perna [quadril-joelho, joelho-pé]; ângulos em graus, 0 = direita, 90 = para baixo. Piso em y = 140. 'p' = adereço (sedia). 'v' = segundos de ida e volta.",
+ "respiro": {
+  "nome": "Respirare con la pancia",
+  "dove": "Sdraiato sulla schiena, ginocchia piegate",
+  "passi": [
+   "Una mano sulla pancia, l'altra sul petto.",
+   "Inspira dal naso e senti la pancia che si alza.",
+   "Butta fuori l'aria piano, dalla bocca, e lascia andare le spalle."
+  ],
+  "attenzione": "Nessuno sforzo: è il modo per far calare la tensione prima di muoverti.",
+  "v": 6,
+  "A": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    -30,
+    25
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -60,
+    70
+   ],
+   "l2": [
+    -58,
+    72
+   ]
+  },
+  "B": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 4,
+   "a1": [
+    -34,
+    22
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -60,
+    70
+   ],
+   "l2": [
+    -58,
+    72
+   ]
+  }
+ },
+ "bacino": {
+  "nome": "Bacino avanti e indietro",
+  "dove": "Sdraiato sulla schiena, ginocchia piegate",
+  "passi": [
+   "Schiaccia piano la parte bassa della schiena contro il pavimento.",
+   "Poi lasciala tornare con una piccola curva.",
+   "Movimento piccolo e lento, senza staccare il sedere."
+  ],
+  "attenzione": "Deve essere un movimento comodo. Se tira, fallo più piccolo.",
+  "v": 4,
+  "A": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": -3,
+   "a1": [
+    0,
+    0
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -60,
+    70
+   ],
+   "l2": [
+    -58,
+    72
+   ]
+  },
+  "B": {
+   "h": [
+    135,
+    126
+   ],
+   "t": 181,
+   "c": 3,
+   "a1": [
+    0,
+    0
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -64,
+    68
+   ],
+   "l2": [
+    -62,
+    70
+   ]
+  }
+ },
+ "ginocchio_petto": {
+  "nome": "Un ginocchio al petto",
+  "dove": "Sdraiato sulla schiena, ginocchia piegate",
+  "passi": [
+   "Porta un ginocchio verso il petto e tienilo con le mani.",
+   "Resta qualche secondo respirando, poi riappoggia il piede.",
+   "Cambia gamba."
+  ],
+  "attenzione": "Tira piano, senza strappi. La testa resta giù.",
+  "v": 5,
+  "A": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    0,
+    0
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -60,
+    70
+   ],
+   "l2": [
+    -58,
+    72
+   ]
+  },
+  "B": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    -40,
+    -40
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -112,
+    5
+   ],
+   "l2": [
+    -58,
+    72
+   ]
+  }
+ },
+ "due_ginocchia": {
+  "nome": "Due ginocchia al petto",
+  "dove": "Sdraiato sulla schiena",
+  "passi": [
+   "Porta tutte e due le ginocchia verso il petto.",
+   "Tienile con le mani e dondola piano avanti e indietro.",
+   "Respira lento."
+  ],
+  "attenzione": "Se è troppo, torna a una gamba alla volta.",
+  "v": 5,
+  "A": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    0,
+    0
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -60,
+    70
+   ],
+   "l2": [
+    -58,
+    72
+   ]
+  },
+  "B": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    -40,
+    -40
+   ],
+   "a2": [
+    -38,
+    -38
+   ],
+   "l1": [
+    -112,
+    5
+   ],
+   "l2": [
+    -110,
+    7
+   ]
+  }
+ },
+ "bambino": {
+  "nome": "Seduto sui talloni",
+  "dove": "A carponi, mani e ginocchia a terra",
+  "passi": [
+   "Da carponi, porta piano il sedere verso i talloni.",
+   "Lascia le braccia allungate davanti e la testa giù.",
+   "Respira e poi torna a carponi."
+  ],
+  "attenzione": "Vai solo fin dove è comodo. Con le ginocchia che fanno male, un cuscino sotto.",
+  "v": 7,
+  "A": {
+   "h": [
+    150,
+    100
+   ],
+   "t": 197,
+   "c": 0,
+   "k": 0,
+   "a1": [
+    92,
+    92
+   ],
+   "a2": [
+    90,
+    90
+   ],
+   "l1": [
+    90,
+    0
+   ],
+   "l2": [
+    90,
+    0
+   ]
+  },
+  "B": {
+   "h": [
+    178,
+    112
+   ],
+   "t": 170,
+   "c": 6,
+   "k": -20,
+   "a1": [
+    175,
+    178
+   ],
+   "a2": [
+    173,
+    176
+   ],
+   "l1": [
+    146,
+    0
+   ],
+   "l2": [
+    146,
+    0
+   ]
+  }
+ },
+ "gatto": {
+  "nome": "Schiena su e giù a carponi",
+  "dove": "A carponi, mani sotto le spalle",
+  "passi": [
+   "Spingi la schiena verso l'alto e lascia scendere la testa.",
+   "Poi lascia scendere la pancia e alza lo sguardo.",
+   "Lento, seguendo il respiro."
+  ],
+  "attenzione": "Solo il movimento comodo. Non serve arrivare in fondo.",
+  "v": 6,
+  "A": {
+   "h": [
+    150,
+    100
+   ],
+   "t": 197,
+   "c": 14,
+   "k": -35,
+   "a1": [
+    92,
+    92
+   ],
+   "a2": [
+    90,
+    90
+   ],
+   "l1": [
+    90,
+    0
+   ],
+   "l2": [
+    90,
+    0
+   ]
+  },
+  "B": {
+   "h": [
+    150,
+    102
+   ],
+   "t": 196,
+   "c": -7,
+   "k": 20,
+   "a1": [
+    92,
+    92
+   ],
+   "a2": [
+    90,
+    90
+   ],
+   "l1": [
+    90,
+    0
+   ],
+   "l2": [
+    90,
+    0
+   ]
+  }
+ },
+ "piriforme": {
+  "nome": "Allungare il gluteo",
+  "dove": "Sdraiato sulla schiena, ginocchia piegate",
+  "passi": [
+   "Appoggia la caviglia destra sul ginocchio sinistro.",
+   "Porta piano la gamba sinistra verso di te, finché senti tirare il gluteo.",
+   "Resta e respira, poi cambia lato."
+  ],
+  "attenzione": "Deve tirare nel gluteo, non fare male. Se il formicolio aumenta, fermati.",
+  "v": 7,
+  "A": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    0,
+    0
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -60,
+    70
+   ],
+   "l2": [
+    -75,
+    10
+   ]
+  },
+  "B": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    -35,
+    -35
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -95,
+    40
+   ],
+   "l2": [
+    -112,
+    -10
+   ]
+  }
+ },
+ "nervo": {
+  "nome": "Far scorrere il nervo",
+  "dove": "Seduto sulla sedia, schiena dritta",
+  "passi": [
+   "Seduto, guarda in giù e tieni il ginocchio piegato.",
+   "Allunga piano la gamba e intanto alza lo sguardo.",
+   "Torna giù. Movimento lento, senza tenere la posizione."
+  ],
+  "attenzione": "Deve essere un leggero tirare che va e viene. Se il formicolio aumenta o resta, salta questo esercizio.",
+  "v": 4,
+  "p": "sedia",
+  "A": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -88,
+   "c": -4,
+   "k": 40,
+   "a1": [
+    75,
+    30
+   ],
+   "a2": [
+    77,
+    32
+   ],
+   "l1": [
+    0,
+    90
+   ],
+   "l2": [
+    2,
+    92
+   ]
+  },
+  "B": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -88,
+   "c": 0,
+   "k": -20,
+   "a1": [
+    75,
+    30
+   ],
+   "a2": [
+    77,
+    32
+   ],
+   "l1": [
+    -5,
+    -2
+   ],
+   "l2": [
+    2,
+    92
+   ]
+  }
+ },
+ "estensione": {
+  "nome": "Pancia in giù, sui gomiti",
+  "dove": "Sdraiato a pancia in giù",
+  "passi": [
+   "Sdraiato a pancia in giù, appoggiati piano sui gomiti.",
+   "Lascia la pancia e le anche a terra e respira.",
+   "Torna giù e ripeti."
+  ],
+  "attenzione": "Se il dolore scende di più nella gamba, salta questo esercizio.",
+  "v": 7,
+  "A": {
+   "h": [
+    140,
+    133
+   ],
+   "t": 180,
+   "c": 0,
+   "k": 0,
+   "a1": [
+    0,
+    0
+   ],
+   "a2": [
+    1,
+    1
+   ],
+   "l1": [
+    0,
+    0
+   ],
+   "l2": [
+    1,
+    1
+   ]
+  },
+  "B": {
+   "h": [
+    140,
+    133
+   ],
+   "t": 199,
+   "c": 6,
+   "k": 10,
+   "a1": [
+    95,
+    180
+   ],
+   "a2": [
+    95,
+    180
+   ],
+   "l1": [
+    0,
+    0
+   ],
+   "l2": [
+    1,
+    1
+   ]
+  }
+ },
+ "flessori": {
+  "nome": "Allungare la parte davanti dell'anca",
+  "dove": "In ginocchio, un piede avanti",
+  "passi": [
+   "Un ginocchio a terra e l'altro piede davanti, come per allacciare la scarpa.",
+   "Porta piano il bacino in avanti, schiena dritta.",
+   "Senti tirare davanti all'anca. Resta, poi cambia lato."
+  ],
+  "attenzione": "Sotto il ginocchio a terra metti un cuscino.",
+  "v": 7,
+  "A": {
+   "h": [
+    120,
+    100
+   ],
+   "t": -90,
+   "c": 0,
+   "a1": [
+    85,
+    85
+   ],
+   "a2": [
+    85,
+    85
+   ],
+   "l1": [
+    0,
+    90
+   ],
+   "l2": [
+    110,
+    180
+   ]
+  },
+  "B": {
+   "h": [
+    128,
+    102
+   ],
+   "t": -92,
+   "c": 0,
+   "a1": [
+    85,
+    85
+   ],
+   "a2": [
+    85,
+    85
+   ],
+   "l1": [
+    0,
+    88
+   ],
+   "l2": [
+    118,
+    180
+   ]
+  }
+ },
+ "ponte": {
+  "nome": "Ponte",
+  "dove": "Sdraiato sulla schiena, ginocchia piegate",
+  "passi": [
+   "Piedi a terra, larghi come le anche.",
+   "Spingi sui talloni e alza il sedere, fino a una linea dritta tra spalle e ginocchia.",
+   "Scendi piano."
+  ],
+  "attenzione": "Il lavoro è nei glutei. Se senti la schiena, sali di meno.",
+  "v": 5,
+  "A": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    0,
+    0
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -60,
+    70
+   ],
+   "l2": [
+    -58,
+    72
+   ]
+  },
+  "B": {
+   "h": [
+    138,
+    106
+   ],
+   "t": 160,
+   "c": 0,
+   "a1": [
+    6,
+    0
+   ],
+   "a2": [
+    6,
+    0
+   ],
+   "l1": [
+    -15,
+    98
+   ],
+   "l2": [
+    -14,
+    99
+   ]
+  }
+ },
+ "uccello": {
+  "nome": "Braccio e gamba opposti",
+  "dove": "A carponi, mani sotto le spalle",
+  "passi": [
+   "Allunga un braccio davanti e la gamba opposta dietro.",
+   "Schiena ferma, come se avessi un bicchiere appoggiato sopra.",
+   "Torna giù e cambia lato."
+  ],
+  "attenzione": "Meglio poco e fermo che tanto e storto. All'inizio solo la gamba.",
+  "v": 6,
+  "A": {
+   "h": [
+    150,
+    100
+   ],
+   "t": 197,
+   "c": 0,
+   "k": 0,
+   "a1": [
+    92,
+    92
+   ],
+   "a2": [
+    90,
+    90
+   ],
+   "l1": [
+    90,
+    0
+   ],
+   "l2": [
+    90,
+    0
+   ]
+  },
+  "B": {
+   "h": [
+    150,
+    100
+   ],
+   "t": 196,
+   "c": 0,
+   "k": 0,
+   "a1": [
+    190,
+    190
+   ],
+   "a2": [
+    90,
+    90
+   ],
+   "l1": [
+    2,
+    2
+   ],
+   "l2": [
+    90,
+    0
+   ]
+  }
+ },
+ "insetto": {
+  "nome": "Gambe su, una alla volta",
+  "dove": "Sdraiato sulla schiena",
+  "passi": [
+   "Ginocchia sopra le anche, piegate, e braccia verso il soffitto.",
+   "Allunga piano una gamba verso il pavimento, senza toccarlo.",
+   "Torna su e cambia gamba. La schiena resta appoggiata."
+  ],
+  "attenzione": "Se la schiena si stacca da terra, allunga di meno.",
+  "v": 6,
+  "A": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    -90,
+    -90
+   ],
+   "a2": [
+    -88,
+    -88
+   ],
+   "l1": [
+    -90,
+    0
+   ],
+   "l2": [
+    -88,
+    2
+   ]
+  },
+  "B": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    -175,
+    -178
+   ],
+   "a2": [
+    -88,
+    -88
+   ],
+   "l1": [
+    -90,
+    0
+   ],
+   "l2": [
+    -22,
+    -12
+   ]
+  }
+ },
+ "plank": {
+  "nome": "Plank sulle ginocchia",
+  "dove": "A pancia in giù, sui gomiti e sulle ginocchia",
+  "passi": [
+   "Gomiti sotto le spalle, ginocchia a terra.",
+   "Alza il bacino fino a una linea dritta tra testa e ginocchia.",
+   "Tieni respirando, senza trattenere il fiato."
+  ],
+  "attenzione": "Se la pancia scende o la schiena fa male, riposa e riprova più corto.",
+  "v": 5,
+  "A": {
+   "h": [
+    140,
+    128
+   ],
+   "t": 185,
+   "c": 0,
+   "a1": [
+    95,
+    180
+   ],
+   "a2": [
+    95,
+    180
+   ],
+   "l1": [
+    17,
+    0
+   ],
+   "l2": [
+    17,
+    0
+   ]
+  },
+  "B": {
+   "h": [
+    138,
+    117
+   ],
+   "t": 184,
+   "c": 0,
+   "a1": [
+    95,
+    180
+   ],
+   "a2": [
+    95,
+    180
+   ],
+   "l1": [
+    30,
+    0
+   ],
+   "l2": [
+    30,
+    0
+   ]
+  }
+ },
+ "sedia": {
+  "nome": "Alzarsi dalla sedia",
+  "dove": "Seduto sul bordo della sedia",
+  "passi": [
+   "Piedi a terra, un po' indietro rispetto alle ginocchia.",
+   "Porta il busto avanti e alzati spingendo sulle gambe.",
+   "Torna a sederti piano, senza lasciarti cadere."
+  ],
+  "attenzione": "All'inizio puoi aiutarti con le mani sulle cosce.",
+  "v": 5,
+  "p": "sedia",
+  "A": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -70,
+   "c": 0,
+   "a1": [
+    80,
+    30
+   ],
+   "a2": [
+    82,
+    32
+   ],
+   "l1": [
+    0,
+    100
+   ],
+   "l2": [
+    2,
+    102
+   ]
+  },
+  "B": {
+   "h": [
+    130,
+    62
+   ],
+   "t": -90,
+   "c": 0,
+   "a1": [
+    92,
+    90
+   ],
+   "a2": [
+    94,
+    92
+   ],
+   "l1": [
+    90,
+    90
+   ],
+   "l2": [
+    92,
+    92
+   ]
+  }
+ },
+ "camminata": {
+  "nome": "Camminare con calma",
+  "dove": "In casa o fuori",
+  "passi": [
+   "Cammina a passo tranquillo, guardando avanti.",
+   "Lascia muovere le braccia.",
+   "Se fa male, rallenta o fermati."
+  ],
+  "attenzione": "Camminare ogni giorno conta più che camminare tanto.",
+  "v": 2,
+  "A": {
+   "h": [
+    120,
+    62
+   ],
+   "t": -90,
+   "c": 0,
+   "a1": [
+    70,
+    80
+   ],
+   "a2": [
+    110,
+    100
+   ],
+   "l1": [
+    70,
+    95
+   ],
+   "l2": [
+    110,
+    85
+   ]
+  },
+  "B": {
+   "h": [
+    120,
+    62
+   ],
+   "t": -90,
+   "c": 0,
+   "a1": [
+    110,
+    100
+   ],
+   "a2": [
+    70,
+    80
+   ],
+   "l1": [
+    110,
+    85
+   ],
+   "l2": [
+    70,
+    95
+   ]
+  }
+ },
+ "ponte_una": {
+  "nome": "Ponte su una gamba",
+  "dove": "Sdraiato sulla schiena, ginocchia piegate",
+  "passi": [
+   "Come il ponte, ma con una gamba allungata.",
+   "Alza il sedere spingendo sul tallone a terra.",
+   "Scendi piano e cambia gamba."
+  ],
+  "attenzione": "Se il bacino si storce, torna al ponte con due piedi.",
+  "v": 5,
+  "A": {
+   "h": [
+    135,
+    128
+   ],
+   "t": 180,
+   "c": 0,
+   "a1": [
+    0,
+    0
+   ],
+   "a2": [
+    0,
+    0
+   ],
+   "l1": [
+    -60,
+    70
+   ],
+   "l2": [
+    -30,
+    -30
+   ]
+  },
+  "B": {
+   "h": [
+    138,
+    106
+   ],
+   "t": 160,
+   "c": 0,
+   "a1": [
+    6,
+    0
+   ],
+   "a2": [
+    6,
+    0
+   ],
+   "l1": [
+    -15,
+    98
+   ],
+   "l2": [
+    -15,
+    -15
+   ]
+  }
+ },
+ "mento": {
+  "nome": "Mento indietro",
+  "dove": "Seduto, schiena appoggiata",
+  "passi": [
+   "Guarda avanti.",
+   "Porta il mento indietro, come per fare il doppio mento.",
+   "Tieni due secondi e torna."
+  ],
+  "attenzione": "La testa non va in giù: scivola indietro.",
+  "v": 4,
+  "p": "sedia",
+  "A": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -90,
+   "c": 0,
+   "k": 0,
+   "hd": [
+    0,
+    0
+   ],
+   "a1": [
+    80,
+    20
+   ],
+   "a2": [
+    82,
+    22
+   ],
+   "l1": [
+    0,
+    90
+   ],
+   "l2": [
+    2,
+    92
+   ]
+  },
+  "B": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -90,
+   "c": 0,
+   "k": 0,
+   "hd": [
+    -6,
+    1
+   ],
+   "a1": [
+    80,
+    20
+   ],
+   "a2": [
+    82,
+    22
+   ],
+   "l1": [
+    0,
+    90
+   ],
+   "l2": [
+    2,
+    92
+   ]
+  }
+ },
+ "spalle": {
+  "nome": "Spalle su e giù",
+  "dove": "Seduto, braccia lungo il corpo",
+  "passi": [
+   "Alza le spalle verso le orecchie.",
+   "Lasciale cadere giù di colpo, buttando fuori l'aria.",
+   "Ripeti con calma."
+  ],
+  "attenzione": "Il collo resta lungo, lo sguardo avanti.",
+  "v": 3,
+  "p": "sedia",
+  "A": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -90,
+   "c": 0,
+   "k": 0,
+   "a1": [
+    90,
+    90
+   ],
+   "a2": [
+    92,
+    92
+   ],
+   "l1": [
+    0,
+    90
+   ],
+   "l2": [
+    2,
+    92
+   ],
+   "sh": 0
+  },
+  "B": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -90,
+   "c": 0,
+   "k": 0,
+   "a1": [
+    90,
+    90
+   ],
+   "a2": [
+    92,
+    92
+   ],
+   "l1": [
+    0,
+    90
+   ],
+   "l2": [
+    2,
+    92
+   ],
+   "sh": -7
+  }
+ },
+ "petto": {
+  "nome": "Aprire il petto",
+  "dove": "Seduto, schiena staccata dallo schienale",
+  "passi": [
+   "Mani dietro la testa, gomiti avanti.",
+   "Apri i gomiti indietro e porta il petto in fuori.",
+   "Torna e ripeti."
+  ],
+  "attenzione": "Senza spingere sulla testa con le mani.",
+  "v": 5,
+  "p": "sedia",
+  "A": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -88,
+   "c": -4,
+   "k": 10,
+   "a1": [
+    -60,
+    -150
+   ],
+   "a2": [
+    -55,
+    -150
+   ],
+   "l1": [
+    0,
+    90
+   ],
+   "l2": [
+    2,
+    92
+   ]
+  },
+  "B": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -92,
+   "c": 4,
+   "k": -5,
+   "a1": [
+    -120,
+    -20
+   ],
+   "a2": [
+    -115,
+    -20
+   ],
+   "l1": [
+    0,
+    90
+   ],
+   "l2": [
+    2,
+    92
+   ]
+  }
+ },
+ "braccia": {
+  "nome": "Braccia in alto",
+  "dove": "Seduto, schiena staccata dallo schienale",
+  "passi": [
+   "Braccia lungo il corpo.",
+   "Alzale piano davanti a te fino sopra la testa, fin dove è comodo.",
+   "Riportale giù lentamente."
+  ],
+  "attenzione": "Le spalle restano basse, lontane dalle orecchie.",
+  "v": 6,
+  "p": "sedia",
+  "A": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -90,
+   "c": 0,
+   "k": 0,
+   "a1": [
+    90,
+    90
+   ],
+   "a2": [
+    92,
+    92
+   ],
+   "l1": [
+    0,
+    90
+   ],
+   "l2": [
+    2,
+    92
+   ]
+  },
+  "B": {
+   "h": [
+    110,
+    100
+   ],
+   "t": -90,
+   "c": 0,
+   "k": -8,
+   "a1": [
+    -80,
+    -82
+   ],
+   "a2": [
+    -82,
+    -84
+   ],
+   "l1": [
+    0,
+    90
+   ],
+   "l2": [
+    2,
+    92
+   ]
+  }
+ }
+}

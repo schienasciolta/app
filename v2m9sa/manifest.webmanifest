@@ -1,0 +1,32 @@
+{
+ "name": "Schiena Sciolta",
+ "short_name": "Schiena",
+ "lang": "it",
+ "description": "Il piano di 3 settimane per la schiena, da fare a casa.",
+ "start_url": "./",
+ "scope": "../",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#f4eee6",
+ "theme_color": "#f4eee6",
+ "icons": [
+  {
+   "src": "../img/icones/icone-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "../img/icones/icone-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "../img/icones/icone-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
