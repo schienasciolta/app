@@ -17,7 +17,7 @@ PASTAS = {
 }
 # checkouts avulsos dos pacotes, abertos pelo cadeado dentro do app (preencher quando a Cakto existir)
 CHECKOUT = {'sveglia': 'https://pay.cakto.com.br/6m2q4k7', 'collo': 'https://pay.cakto.com.br/ku5ycc2', 'forte': 'https://pay.cakto.com.br/s36n8u5'}
-VERSAO = 2
+VERSAO = 3
 
 esercizi = json.load(open(os.path.join(AQUI, 'conteudo', 'esercizi.json'), encoding='utf-8'))
 piano = json.load(open(os.path.join(AQUI, 'conteudo', 'piano.json'), encoding='utf-8'))
