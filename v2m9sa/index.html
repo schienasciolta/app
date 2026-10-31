@@ -111,7 +111,7 @@ svg.figura{width:100%;height:auto;display:block;background:var(--areia);border-r
 /* ===== Acesso: vem da PASTA do link de cada compra e se soma ao que o aparelho já guardou. ===== */
 const RAIZ = '../';
 const ACESSO_PASTA = ["base", "sveglia"];
-const CHECKOUT = { sveglia: 'https://pay.hotmart.com/H108278590J', collo: 'https://pay.hotmart.com/I108278597X', forte: 'https://pay.hotmart.com/H108279005W' };
+const CHECKOUT = { sveglia: 'https://pay.hotmart.com/H108278590J?checkoutMode=10', collo: 'https://pay.hotmart.com/I108278597X?checkoutMode=10', forte: 'https://pay.hotmart.com/H108279005W?checkoutMode=10' };
 const PRECO = { sveglia: '9,90 €', collo: '4,90 €', forte: '19,90 €' };
 const LS = {
   ler: (k, d) => { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? d; } catch (e) { return d; } },

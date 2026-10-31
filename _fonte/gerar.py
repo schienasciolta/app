@@ -15,9 +15,9 @@ PASTAS = {
     'f5w1pd': ['base', 'forte'],                          # upsell Schiena Forte
     'x9t6lb': ['base', 'sveglia', 'collo', 'forte'],      # teste interno: tudo liberado (fora do ar, ver .gitignore)
 }
-# checkouts avulsos dos pacotes, abertos pelo cadeado dentro do app (Hotmart em euro, IVA incluso)
-CHECKOUT = {'sveglia': 'https://pay.hotmart.com/H108278590J', 'collo': 'https://pay.hotmart.com/I108278597X', 'forte': 'https://pay.hotmart.com/H108279005W'}
-VERSAO = 4
+# checkouts avulsos dos pacotes, abertos pelo cadeado dentro do app (Hotmart em euro, IVA incluso; checkoutMode=10 traz o banner)
+CHECKOUT = {'sveglia': 'https://pay.hotmart.com/H108278590J?checkoutMode=10', 'collo': 'https://pay.hotmart.com/I108278597X?checkoutMode=10', 'forte': 'https://pay.hotmart.com/H108279005W?checkoutMode=10'}
+VERSAO = 5
 
 esercizi = json.load(open(os.path.join(AQUI, 'conteudo', 'esercizi.json'), encoding='utf-8'))
 piano = json.load(open(os.path.join(AQUI, 'conteudo', 'piano.json'), encoding='utf-8'))
