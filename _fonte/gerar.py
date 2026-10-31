@@ -15,9 +15,9 @@ PASTAS = {
     'f5w1pd': ['base', 'forte'],                          # upsell Schiena Forte
     'x9t6lb': ['base', 'sveglia', 'collo', 'forte'],      # teste interno: tudo liberado (fora do ar, ver .gitignore)
 }
-# checkouts avulsos dos pacotes, abertos pelo cadeado dentro do app (preencher quando a Cakto existir)
-CHECKOUT = {'sveglia': 'https://pay.cakto.com.br/6m2q4k7', 'collo': 'https://pay.cakto.com.br/ku5ycc2', 'forte': 'https://pay.cakto.com.br/s36n8u5'}
-VERSAO = 3
+# checkouts avulsos dos pacotes, abertos pelo cadeado dentro do app (Hotmart em euro, IVA incluso)
+CHECKOUT = {'sveglia': 'https://pay.hotmart.com/H108278590J', 'collo': 'https://pay.hotmart.com/I108278597X', 'forte': 'https://pay.hotmart.com/H108279005W'}
+VERSAO = 4
 
 esercizi = json.load(open(os.path.join(AQUI, 'conteudo', 'esercizi.json'), encoding='utf-8'))
 piano = json.load(open(os.path.join(AQUI, 'conteudo', 'piano.json'), encoding='utf-8'))
